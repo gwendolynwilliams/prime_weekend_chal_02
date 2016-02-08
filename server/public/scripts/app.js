@@ -1,9 +1,16 @@
 $(document).ready(function(){
     getData();
+
+    // Forward button
+    $('#goForwardButton').on('click', goForward);
+
+    // Back button
+    $('#goBackButton').on('click', goBack);
+
 });
 
+var people = [];
 var currentlySelectedPerson = 0;
-//var id;
 var intervalId;
 
 // What I would like to see on the DOM, is one person represented.
@@ -17,6 +24,9 @@ var intervalId;
 // When a person is displayed, show their name, their favorite movies, and favorite song.
 // Only one person should be showcased at any given time.
 
+// second commit: refactored code to pull out functions from success area
+// moved event listeners to document ready section
+
 
     function getData(){
     $.ajax({
@@ -24,43 +34,19 @@ var intervalId;
         url:"/data",
         success: function(data) {
             console.log(data);
-            findNumberOfPeople(data);
-            showEachPerson(data.people, currentlySelectedPerson);
 
-            // Forward button
-            $('#goForward').on('click', function() {
-                if(currentlySelectedPerson >= data.people.length - 1) {
-                    //console.log('CurrentlySelectedPerson: ' + currentlySelectedPerson);
-                    return;
-                } else {
-                    currentlySelectedPerson += 1;
-                }
+            people = data.people;
 
-                showEachPerson(data.people, currentlySelectedPerson);
-                stopTimer();
-                startTimer(data);
-            });
+            //create number buttons
+            findNumberOfPeople();
 
-            // Back button
-            $('#goBack').on('click', function() {
-                if(currentlySelectedPerson == 0) {
-                    return;
-                }
-                currentlySelectedPerson -= 1;
-                showEachPerson(data.people, currentlySelectedPerson);
-                stopTimer();
-                startTimer(data);
-            });
+            //show first person
+            showEachPerson(people, currentlySelectedPerson);
 
             // Make person number button clickable
-            $('.personNumber').on('click', function() {
-                currentlySelectedPerson = parseInt(this.id);
-                showEachPerson(data.people, currentlySelectedPerson);
-                stopTimer();
-                startTimer(data);
-            });
+            $('.personNumberButton').on('click', personNumber);
 
-            startTimer(data);
+            startTimer();
 
         },
         error: function() {
@@ -70,13 +56,14 @@ var intervalId;
     });
 }
 
+// Create number buttons
 // Finds the number of people in the people array from the JSON file
-// Creates number buttons
-function findNumberOfPeople(data) {
-    var numPeople = data.people.length;
+function findNumberOfPeople() {
+    var numPeople = people.length;
     for(var i = 0; i < numPeople; i++) {
-        var displayNumber = parseInt(i) + 1;
-        $('.numberButtons').append('<button class="personNumber" id="' + i + '">' + displayNumber + '</button>');
+        // display number = i + 1 so you start with button 1, not 0
+        var displayNumber = i + 1;
+        $('.numberButtons').append('<button class="personNumberButton" id="' + i + '">' + displayNumber + '</button>');
     }
 }
 
@@ -93,23 +80,52 @@ function showEachPerson(peopleArray, personIndex) {
 
 
     // displays currently selected person button with bold formatting
-    if( personIndex == currentlySelectedPerson) {
-        $('.personNumber').removeClass('selected');
+    if(personIndex == currentlySelectedPerson) {
+        $('.personNumberButton').removeClass('selected');
         $('#' + currentlySelectedPerson).addClass('selected');
     }
 }
 
+function goForward() {
+    if(currentlySelectedPerson >= people.length - 1) {
+        currentlySelectedPerson = 0;
+    } else {
+        currentlySelectedPerson += 1
+    }
+
+    showEachPerson(people, currentlySelectedPerson);
+    stopTimer();
+    startTimer();
+}
+
+function goBack() {
+    if(currentlySelectedPerson == 0) {
+        currentlySelectedPerson = people.length;
+    }
+    currentlySelectedPerson -= 1;
+    showEachPerson(people, currentlySelectedPerson);
+    stopTimer();
+    startTimer();
+}
+
+function personNumber() {
+    currentlySelectedPerson = parseInt(this.id);
+    showEachPerson(people, currentlySelectedPerson);
+    stopTimer();
+    startTimer();
+}
+
 // PRO MODE: timer to advance to the next person if no button has been clicked
-function startTimer(data) {
+function startTimer() {
     intervalId = setInterval(function() {
-        if(currentlySelectedPerson >= data.people.length - 1) {
+        if(currentlySelectedPerson >= people.length - 1) {
             console.log('intervalId: ' + intervalId);
             return;
         } else {
             console.log('intervalId: ' + intervalId);
             currentlySelectedPerson += 1;
         }
-        showEachPerson(data.people, currentlySelectedPerson);
+        showEachPerson(people, currentlySelectedPerson);
     }, 10000);
 }
 
