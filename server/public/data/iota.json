@@ -1,0 +1,137 @@
+{
+  "people": [
+    {
+      "name": "Kris Szafranski",
+      "favoriteMovie1": "The Goonies",
+      "favoriteMovie2": "The Incredibles",
+      "favoriteSong": "Rez/Cowgirl Live by Underworld",
+      "image": "https://avatars2.githubusercontent.com/u/5541481?v=3&s=460"
+    },
+    {
+      "name": "Ryan Mulcahy",
+      "favoriteMovie1": "Blade Runner",
+      "favoriteMovie2": "Inside Out",
+      "favoriteSong": "No Children - The Mountain Goats",
+      "image": "https://avatars0.githubusercontent.com/u/5800836?v=3&s=460"
+    },
+    {
+      "name": "Luis",
+      "favoriteMovie1": "Catch Me If You Can",
+      "favoriteMovie2": "Emperor's New Groove",
+      "favoriteSong": "...And Justice For All",
+      "image": "https://avatars3.githubusercontent.com/u/14917038?v=3&s=460"
+    },
+    {
+      "name": "Savio Nguyen",
+      "favoriteMovie1": "Godfather",
+      "favoriteMovie2": "Empire Strikes Back",
+      "favoriteSong": "Them Changes by Thundercat feat Flying Lotus & Kamasi Washington",
+      "image": "https://avatars3.githubusercontent.com/u/14845326?v=3&s=460"
+    },
+    {
+      "name": "Bennett Batzli",
+      "favoriteMovie1": "Bill & Ted's Excellent Adventure",
+      "favoriteMovie2": "High Fidelity",
+      "favoriteSong": "Source - Fever the Ghost",
+      "image": "https://avatars1.githubusercontent.com/u/13686104?v=3&s=460"
+    },
+    {
+      "name": "Anthony Maki",
+      "favoriteMovie1": "The Revenant",
+      "favoriteMovie2": "Interstellar",
+      "favoriteSong": "Lazarus",
+      "image": "https://avatars1.githubusercontent.com/u/15058720?v=3&s=460"
+    },
+    {
+      "name": "John Rachuy",
+      "favoriteMovie1": "Stripes",
+      "favoriteMovie2": "The Game",
+      "favoriteSong": "Zac Brown Band - Beautiful Drug",
+      "image": "https://avatars3.githubusercontent.com/u/14169092?v=3&s=460"
+    },
+    {
+      "name": "Kailey Colestock",
+      "favoriteMovie1": "Howl's Moving Castle",
+      "favoriteMovie2": "How to Train Your Dragon",
+      "favoriteSong": "Mad World",
+      "image": "https://avatars2.githubusercontent.com/u/15081595?v=3&s=460"
+    },
+    {
+      "name": "Caitlin Collins",
+      "favoriteMovie1": "Mulan",
+      "favoriteMovie2": "Homeward Bound",
+      "favoriteSong": "Love Yourself",
+      "image": "https://avatars3.githubusercontent.com/u/15434130?v=3&s=460"
+    },
+    {
+      "name": "Moni Francesca",
+      "favoriteMovie1": "Apocolypse Now",
+      "favoriteMovie2": "Do The Right Thing",
+      "favoriteSong": "Hotline Bling",
+      "image": "https://avatars2.githubusercontent.com/u/2745303?v=3&s=460"
+    },
+    {
+      "name": "Alex Minge",
+      "favoriteMovie1": "The Matrix",
+      "favoriteMovie2": "Kill Bill Volume 1",
+      "favoriteSong": "Under the Bridge",
+      "image": "https://avatars2.githubusercontent.com/u/14836346?v=3&s=460"
+    },
+    {
+      "name": "Gwen",
+      "favoriteMovie1": "Guardians of the Galaxy",
+      "favoriteMovie2": "My Neighbor Totoro",
+      "favoriteSong": "Mr. Blue Sky",
+      "image": "https://avatars3.githubusercontent.com/u/5042496?v=3&s=460"
+    },
+    {
+      "name": "Remy Allen",
+      "favoriteMovie1": "Back to the Future",
+      "favoriteMovie2": "Scott Pilgrim vs. the World",
+      "favoriteSong": "I and Love and You",
+      "image": "https://avatars0.githubusercontent.com/u/15317543?v=3&s=460"
+    },
+    {
+      "name": "Annette Tousley",
+      "favoriteMovie1": "Almost Famous",
+      "favoriteMovie2": "Pride and Prejudice",
+      "favoriteSong": "Brandi Carlile, Murder in the City",
+      "image": "https://avatars0.githubusercontent.com/u/14990146?v=3&s=460"
+    },
+    {
+      "name": "Andy Fehrenbach",
+      "favoriteMovie1": "Once",
+      "favoriteMovie2": "Little Miss Sunshine",
+      "favoriteSong": "This Boy is Exhausted by The Wrens",
+      "image": "https://avatars1.githubusercontent.com/u/13650579?v=3&s=460"
+    },
+    {
+      "name": "Juan Ball",
+      "favoriteMovie1": "Dumb and dumber",
+      "favoriteMovie2": "The Dark Night",
+      "favoriteSong": "Facts - By Kanye West",
+      "image": "https://avatars0.githubusercontent.com/u/15478858?v=3&s=460"
+    },
+    {
+      "name": "Kat",
+      "favoriteMovie1": "Natural Born Killers",
+      "favoriteMovie2": "All the Presidents Men",
+      "favoriteSong": "Whiter Shade of Pale",
+      "image": "https://avatars3.githubusercontent.com/u/14060002?v=3&s=460"
+    },
+    {
+      "name": "Joshua Sternberg",
+      "favoriteMovie1": "GalaxyQuest",
+      "favoriteMovie2": "Lord of the Rings trilogy",
+      "favoriteSong": "Keep Your Eyes Open by Needtobreathe",
+      "image": "https://avatars3.githubusercontent.com/u/15600206?v=3&s=460"
+    },
+    {
+      "name": "Kati Lueth",
+      "favoriteMovie1": "Before Sunrise",
+      "favoriteMovie2": "Mission Impossible",
+      "favoriteSong": "Hey Mami, Sylvan Esso",
+      "image": "https://avatars0.githubusercontent.com/u/14807681?v=3&s=460"
+    }
+  ]
+}

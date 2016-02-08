@@ -1,0 +1,27 @@
+body {
+    margin-top: 20px;
+}
+
+#goBack, #goForward {
+    margin-top: 200px;
+}
+
+.personNumber {
+    margin: 75px 6px 0 0;
+}
+
+.person {
+    background-color: #9acfea;
+    border: solid #3c3c3c 1px;
+}
+
+.selected {
+    background-color: #a94442;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border: solid #3c3c3c 1px;
+    margin-top: 30px;
+}
